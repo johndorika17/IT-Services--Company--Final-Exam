@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexbyte Solutions — Managed IT Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV BAR ===== -->
+<header class="navbar" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">NEXBYTE</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HOME / HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Managed IT for growing teams</p>
+      <h1>We keep your<br>systems <span class="highlight">running</span>,<br>so you don't have to.</h1>
+      <p class="hero-sub">Nexbyte Solutions handles the servers, the security, and the 2am alerts — a small, senior team that treats your network like it's our own.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Talk to an engineer</a>
+        <a href="#services" class="btn btn-ghost">View services</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>99.98%</dt><dd>uptime, last 12 months</dd></div>
+        <div><dt>&lt; 15 min</dt><dd>average response time</dd></div>
+        <div><dt>40+</dt><dd>businesses supported</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-diagram" aria-hidden="true">
+      <svg viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg" class="circuit-svg">
+        <g class="trace-lines" fill="none" stroke-width="1.5">
+          <path d="M230 230 L100 100"/>
+          <path d="M230 230 L360 100"/>
+          <path d="M230 230 L100 360"/>
+          <path d="M230 230 L360 360"/>
+          <path d="M230 230 L230 60"/>
+          <path d="M230 230 L230 400"/>
+          <path d="M100 100 L100 40"/>
+          <path d="M360 100 L360 40"/>
+          <path d="M100 360 L60 360"/>
+          <path d="M360 360 L400 360"/>
+        </g>
+        <g class="trace-dots">
+          <circle cx="230" cy="230" r="7"/>
+          <circle cx="100" cy="100" r="4"/>
+          <circle cx="360" cy="100" r="4"/>
+          <circle cx="100" cy="360" r="4"/>
+          <circle cx="360" cy="360" r="4"/>
+          <circle cx="230" cy="60" r="4"/>
+          <circle cx="230" cy="400" r="4"/>
+        </g>
+        <g class="node-core">
+          <circle cx="230" cy="230" r="34"/>
+          <text x="230" y="235" text-anchor="middle" class="node-core-label">NEX</text>
+        </g>
+        <g class="node-labels">
+          <rect x="52" y="76" width="96" height="30" rx="6"/>
+          <text x="100" y="96" text-anchor="middle">Cloud</text>
+
+          <rect x="312" y="76" width="96" height="30" rx="6"/>
+          <text x="360" y="96" text-anchor="middle">Security</text>
+
+          <rect x="52" y="336" width="96" height="30" rx="6"/>
+          <text x="100" y="356" text-anchor="middle">Backup</text>
+
+          <rect x="312" y="336" width="96" height="30" rx="6"/>
+          <text x="360" y="356" text-anchor="middle">Support</text>
+
+          <rect x="182" y="26" width="96" height="30" rx="6"/>
+          <text x="230" y="46" text-anchor="middle">Network</text>
+
+          <rect x="182" y="376" width="96" height="30" rx="6"/>
+          <text x="230" y="396" text-anchor="middle">Helpdesk</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about">
+  <div class="section-inner about-grid">
+    <div class="about-label">
+      <p class="eyebrow">About us</p>
+      <h2>Built by the people who used to get paged at 3am.</h2>
+      <img
+        class="about-photo"
+        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+        alt="Nexbyte engineers working together at a desk with laptops">
+    </div>
+    <div class="about-body">
+      <p>Nexbyte Solutions started in 2019 when three sysadmins got tired of watching small businesses get burned by IT contractors who never picked up the phone. We do things differently: one dedicated point of contact, plain-language explanations, and a monitoring stack that catches problems before your team notices anything's wrong.</p>
+      <p>Today we manage networks, cloud infrastructure, and day-to-day support for companies that would rather focus on their own customers than chase down a ticket queue.</p>
+      <div class="about-values">
+        <div class="value-card">
+          <img class="value-photo" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=500&q=70" alt="Support engineer working at a laptop">
+          <span class="value-index">01</span>
+          <h3>Respond fast</h3>
+          <p>A human answers, not a ticket bot. Most issues are triaged in under fifteen minutes.</p>
+        </div>
+        <div class="value-card">
+          <img class="value-photo" src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?auto=format&fit=crop&w=500&q=70" alt="Team explaining an issue in a meeting">
+          <span class="value-index">02</span>
+          <h3>Explain clearly</h3>
+          <p>No jargon walls. You'll always know what broke, why, and what we did about it.</p>
+        </div>
+        <div class="value-card">
+          <img class="value-photo" src="https://images.unsplash.com/photo-1691435828932-911a7801adfb?auto=format&fit=crop&w=500&q=70" alt="Close-up of network cabling being monitored">
+          <span class="value-index">03</span>
+          <h3>Prevent, don't just fix</h3>
+          <p>Continuous monitoring means most incidents get resolved before they become downtime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="gallery">
+  <div class="section-inner">
+    <p class="eyebrow center">A look inside Nexbyte</p>
+    <h2 class="center">Where the work happens</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=700&q=70" alt="Engineers reviewing systems together at a table">
+      <img src="https://images.unsplash.com/photo-1603201667230-bd139210db18?auto=format&fit=crop&w=700&q=70" alt="Two colleagues collaborating on a support ticket">
+      <img src="https://images.unsplash.com/photo-1637855195094-992d3d578f42?auto=format&fit=crop&w=700&q=70" alt="Engineer working at a desk with a monitor">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=70" alt="Team members working together on laptops">
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES / PRICING ===== -->
+<section id="services" class="services">
+  <div class="section-inner">
+    <p class="eyebrow center">Services &amp; pricing</p>
+    <h2 class="center">Support that scales with your team</h2>
+    <p class="services-sub center">Every plan includes 24/7 monitoring and a dedicated engineer. Upgrade or downgrade any time.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <img class="price-photo" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=600&q=70" alt="Engineer working on a laptop">
+        <h3>Starter</h3>
+        <p class="price-desc">For small teams who need a safety net.</p>
+        <p class="price"><span>$149</span>/mo</p>
+        <ul>
+          <li>Up to 10 devices monitored</li>
+          <li>Business-hours support</li>
+          <li>Monthly security patching</li>
+          <li>Email &amp; chat support</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Choose Starter</a>
+      </div>
+
+      <div class="price-card price-card-featured">
+        <span class="price-tag">Most popular</span>
+        <img class="price-photo" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=70" alt="Three engineers collaborating in the office">
+        <h3>Growth</h3>
+        <p class="price-desc">For teams that can't afford downtime.</p>
+        <p class="price"><span>$399</span>/mo</p>
+        <ul>
+          <li>Up to 50 devices monitored</li>
+          <li>24/7 monitoring &amp; response</li>
+          <li>Weekly patching &amp; backups</li>
+          <li>Dedicated support engineer</li>
+          <li>Quarterly infrastructure review</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-block">Choose Growth</a>
+      </div>
+
+      <div class="price-card">
+        <img class="price-photo" src="https://images.unsplash.com/photo-1562577308-c8b2614b9b9a?auto=format&fit=crop&w=600&q=70" alt="Team lettering spelling out TEAM">
+        <h3>Enterprise</h3>
+        <p class="price-desc">For larger, multi-site operations.</p>
+        <p class="price"><span>Custom</span></p>
+        <ul>
+          <li>Unlimited devices &amp; sites</li>
+          <li>24/7 monitoring &amp; response</li>
+          <li>Dedicated engineering team</li>
+          <li>Custom SLA &amp; on-site visits</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+  <div class="section-inner contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's look at your setup.</h2>
+      <p>Tell us what you're working with and we'll reply within one business day with next steps — no sales pressure, just a straight answer on whether we're a fit.</p>
+      <ul class="contact-details">
+        <li><strong>Email</strong><span>hello@nexbytesolutions.com</span></li>
+        <li><strong>Phone</strong><span>+1 (555) 018-2043</span></li>
+        <li><strong>Office</strong><span>214 Harbor St, Suite 4B, Portland, OR</span></li>
+        <li><strong>Hours</strong><span>Mon–Fri, 8am–6pm PT · 24/7 for Growth &amp; Enterprise</span></li>
+      </ul>
+    </div>
+    <form class="contact-form" onsubmit="return false;">
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@company.com" required>
+      </label>
+      <label>
+        Company
+        <input type="text" name="company" placeholder="Company name">
+      </label>
+      <label>
+        What do you need help with?
+        <textarea name="message" rows="4" placeholder="A couple of sentences is plenty." required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Send message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">NEXBYTE</span>
+      <p>Managed IT support for small and mid-sized businesses.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Site</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">Our story</a>
+        <a href="#contact">Careers</a>
+        <a href="#contact">Support portal</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2026 Nexbyte Solutions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
