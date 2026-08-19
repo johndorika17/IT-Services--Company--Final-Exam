@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account — Nexbyte Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">NEXBYTE</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <button class="btn btn-ghost" id="logout-btn" style="border-radius:999px;">Log out</button>
+    </nav>
+  </div>
+</header>
+
+<section class="dashboard-section">
+  <div class="section-inner">
+    <div class="dashboard-header">
+      <div>
+        <p class="eyebrow">My Account <span class="role-badge" style="background:var(--amber);">Customer</span></p>
+        <h2>Welcome, <span id="user-name">there</span></h2>
+        <p class="dashboard-welcome">Here's a quick look at your Nexbyte service.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-cards">
+      <div class="value-card">
+        <span class="value-index">01</span>
+        <h3>Your Plan</h3>
+        <p>You're currently on the Starter plan. Upgrade any time from the Services page.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-index">02</span>
+        <h3>Open a Ticket</h3>
+        <p>Something not working right? Send us a message and we'll respond within 15 minutes.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-index">03</span>
+        <h3>Billing</h3>
+        <p>View invoices and update your payment details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script>
+  guardPage("customer");
+  document.getElementById("logout-btn").addEventListener("click", logoutUser);
+</script>
+
+</body>
+</html>

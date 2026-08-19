@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Nexbyte Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">NEXBYTE</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </div>
+</header>
+
+<section class="auth-section">
+  <div class="auth-card">
+    <p class="eyebrow">Welcome back</p>
+    <h2>Log in to your account</h2>
+    <p class="auth-sub">Admin and Customer accounts both log in here — you'll be sent to the right dashboard automatically.</p>
+
+    <form class="auth-form" id="login-form">
+      <label>
+        Email
+        <input type="email" id="login-email" placeholder="you@example.com" required>
+      </label>
+      <label>
+        Password
+        <input type="password" id="login-password" placeholder="••••••••" required>
+      </label>
+      <p class="auth-error" id="auth-error"></p>
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+    </form>
+
+    <p class="auth-switch">Don't have an account? <a href="register.html">Register here</a></p>
+  </div>
+</section>
+
+<!-- Firebase SDKs (compat version, simplest for beginners) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+<script>
+  document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
+    loginUser(email, password);
+  });
+</script>
+
+</body>
+</html>
